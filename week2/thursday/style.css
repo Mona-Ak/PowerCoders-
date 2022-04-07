@@ -1,0 +1,14 @@
+body{
+    display: grid;
+    height: 100vh;
+    margin: 0;
+    place-items: center;
+}
+
+img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    
+}
+
