@@ -23,4 +23,16 @@ h1{
     bottom: 0; */
 }
 
+main{
+    background-color: blue;
+    display: inline-block;
+    width: 50%;
+}
+/* the only time that space in html effect on the block level tags is in this situation we have inline-block display in main and aside and they are must to be next to each other but it doesn't happen because there is space between main and aside in html if you put them next to each other it will work */
+aside{
+    background-color: green;
+    display: inline-block;
+    width: 50%;
+}
+
 
