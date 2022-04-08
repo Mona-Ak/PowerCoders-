@@ -14,25 +14,48 @@ h1{
     background-color: red;
     margin: auto;
     height: 20vh;
-    width: 200px;
+    width: 100%;
     text-align: center;
-    /* position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0; */
+    padding: 250px;
+}
+
+
+/* flex */
+body{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap ;
 }
 
 main{
     background-color: blue;
-    display: inline-block;
-    width: 50%;
+    width: 50px;
+    flex-grow: 1 ;
+    flex-shrink: 1;
 }
-/* the only time that space in html effect on the block level tags is in this situation we have inline-block display in main and aside and they are must to be next to each other but it doesn't happen because there is space between main and aside in html if you put them next to each other it will work */
+
 aside{
     background-color: green;
-    display: inline-block;
-    width: 50%;
+    /* width: 50%; */
+    flex-basis: 150px;
+    flex-grow: 3;
 }
+footer{
+    background-color: #000;
+    color: #fff;
+    /* width: 100%; */
+    flex-basis: 100%;
+}
+
+
+
+
+
+/* instead of using width you can use flex-basis */
+
+
+/* the only time that space in html effect on the block level tags is in this situation we have inline-block display in main and aside and they are must to be next to each other but it doesn't happen because there is space between main and aside in html if you put them next to each other it will work */
+
+
 
 
