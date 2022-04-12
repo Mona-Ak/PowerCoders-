@@ -2,6 +2,8 @@ html{
     box-sizing: border-box;
     font-size: 10px;
     height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 *, *::before, *::after{
@@ -15,3 +17,34 @@ html{
     text-transform: uppercase;
     padding: 1rem;
 }
+
+body{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: skyblue;
+    border-top: 3rem solid blue;
+}
+main{
+    padding: 0;
+}
+
+article{
+    background-color: lightgray;
+}
+
+section{
+    background-color: lightcyan;
+}
+
+section:nth-of-type(2){
+    background-color: gold;
+}
+section:nth-of-type(3){
+    background-color: lightcoral;
+}
+section:nth-of-type(4){
+    background-color: crimson;
+}
+
