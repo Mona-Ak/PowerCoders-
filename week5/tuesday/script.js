@@ -58,31 +58,37 @@ let potter3 = new Book("Harry Potter and the prisoner of Azkaban","J. K. Rowling
 console.log(potter1.author)
 console.log(Object.keys(potter1));
 */
+
 let topics = ['HTML','CSS','JS'];
 topics[15] = 'CLI';
 topics[12] = 'Github';
+// array method to add item at the end of the list
+topics.push('ReactJs');
+// array method to remove item from the list 
+topics.pop()
 
-// console.log(topics);
-topics.forEach(item => console.log(item));
 
-for(let i = 0; i < topics.length; i++){
-    if(topics[i]){
+console.log(topics);
+// topics.forEach(item => console.log(item));
+
+// for(let i = 0; i < topics.length; i++){
+//     if(topics[i]){
         
-        console.log(topics[i]);
-    }
-}
+//         console.log(topics[i]);
+//     }
+// }
 
-let skills = [
-    {
-        frontend: 'JavaScript',
-        backend: ['JavaScript','Python'],
-        dataScience: ['Python','R']
-    },
-    {
-        editor:'VSC',
-        versionControl: ['Github','git']
-    }
-]
+// let skills = [
+//     {
+//         frontend: 'JavaScript',
+//         backend: ['JavaScript','Python'],
+//         dataScience: ['Python','R']
+//     },
+//     {
+//         editor:'VSC',
+//         versionControl: ['Github','git']
+//     }
+// ]
 
 // console.log(skills[1].editor);
 // console.log(skills[1]['editor']);
@@ -93,6 +99,12 @@ let topics2 = new Array();
 topics2[0] = 'HTML';
 topics2[1] = 'CSS';
 topics2[2] = 'JavaScript';
+
+// array method to merge two lists
+let mergedTopics = topics.concat(topics2);
+console.log(mergedTopics);
+// array method to sort alphabetically
+mergedTopics.sort();
 
 // console.log(topics2);
 
